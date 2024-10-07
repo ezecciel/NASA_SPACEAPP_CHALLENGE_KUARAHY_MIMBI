@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="icono.ico">
+    <meta charset="UTF-8">
+    <title>Surviving the Fire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <img src="fondo_final.jpg" class="background-image">
+    </div>
+    <div class="container">
+        <div class="titulo">Surviving the Fire</div>
+        <div class="subtitulo">An Adventure in the Paraguayan Chaco</div>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="bahia-negra.mp4" type="video/mp4">
+                Your browser does not support this video format.
+            </video>
+        </div>
+    </div>
+    <div class="container_subtitulo2">
+        <div class="subtitulo"><br><br>
+            <div class="resultado">
+                <div id="resultado"></div>
+            </div>
+            <div class="resultado">
+                <div id="resultado2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="opciones">
+        <div id="opciones" >
+            <button onclick="mostrarResultado()" >Tell me my result on how I would survive a fire</button>
+        </div>
+        <div id="opciones">
+            <button onclick="location.href='preguntasFinalResultado.html'">How were my answers?</button>
+        </div>
+        <br>
+        <div class="urls">
+            <a href="https://infona.gov.py/">INFONA WEBSITE</a>
+            <a href="https://firms.modaps.eosdis.nasa.gov/map/#d:2023-09-26;@-57.47,-25.16,14.00z"><br><br>NASA WEBSITE</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+/* Estilos globales */
+body {
+  font-family: Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold; /* Hace el texto más grueso */
+  text-shadow: 
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+/* Contenedores */
+.container {
+  border-radius: 10px;
+  width: 800px; /* Ajustar según sea necesario */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  filter: blur(0px);
+  height: 110px;
+}
+.container2 {
+  border-radius: 10px;
+  width: 800px; /* Ajustar según sea necesario */
+  max-height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  filter: blur(0px);
+}
+
+.container_subtitulo {
+  max-height: 500px;
+  display: flex;
+  height: 40vh; /* Ajusta esta altura según sea necesario */
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+.container_subtitulo2 {
+  max-height: 500px;
+  display: block;
+  height: 40vh; /* Ajusta esta altura según sea necesario */
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 40px;
+}
+
+.subtitulo {
+  font-size: 20px;
+  max-height: 20vh;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fade-in 1s ease-in-out;
+}
+
+/* Botones */
+button {
+  cursor: pointer;
+  margin: 50px;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ff8800;
+  transform: translateY(-4px);
+}
+
+button:active {
+  transform: translateY(2px) scale(0.95);
+}
+
+/* Estados de los botones */
+.typing button {
+  display: block;
+  justify-content: flex-end;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  width: 200px;
+  height: 50px;
+  backdrop-filter: blur(10px);
+  filter: blur(0px);
+  animation: fadeIn 1s ease-in-out;
+  margin-left: 70%;
+  margin-top: 5%;
+}
+
+.opciones button,
+.opciones_inicio button {
+  display: block;
+  margin: 0 auto 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  width: 300px;
+  height: 70px;
+  backdrop-filter: blur(10px);
+  filter: blur(0px);
+  font-weight: bold; /* Hace el texto más grueso */
+  text-shadow: 
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+/* Opciones */
+.opciones,
+.opciones_inicio {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: slideInFromBottom 0.5s forwards;
+  font-weight: bold; /* Hace el texto más grueso */
+  text-shadow: 
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.opciones {
+  height: 60vh;
+}
+
+.opciones_inicio {
+  height: 20vh;
+  margin: 0 auto;
+  align-items: end;
+  display: flex;
+}
+
+.urls{
+  display: block;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: 
+    0px 0px 0 #000,
+    -0px -0px 0 #000,
+    0px -0px 0 #000,
+    -0px 0px 0 #000;
+}
+
+/* Resultados */
+.resultado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Resultados Finales */
+.tablaPrincipal {
+  max-width: 600px;
+  margin: 0 auto;
+  animation: slideInFromBottom 0.5s forwards;
+  backdrop-filter: blur(10px);
+  filter: blur(0px);
+}
+
+.celdaPregunta {
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  filter: blur(0px);
+}
+
+.opcionesLista {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  filter: blur(0px);
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff730000;
+}
+
+.celdaOpciones {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  height: 100%;
+}
+
+/* Lista de datos */
+.datos {
+  font-size: 20px;
+}
+
+#listaDatos {
+  list-style: none;
+  padding: 0;
+}
+
+#listaDatos li {
+  margin-bottom: 10px;
+}
+
+/* Video */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Imágenes */
+.mimbi{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1; /* Para que el fondo esté detrás del contenido */
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Para que el fondo esté detrás del contenido */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in {
+  from {
+      left: -100%;
+  }
+  to {
+      left: 0;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 80% {
+    transform: translateX(10px);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-5px);
+  }
+  40%, 60% {
+    transform: translateX(5px);
+  }
+}
+
+.typinghistory {
+  display: flex;
+  font-size: 30px;
+  margin: 0; /* Elimina márgenes innecesarios */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  max-width: 700px;
+  filter: blur(0px);
+  justify-content: center;
+  align-items: center;
+  background-color: #ff730000;
+  box-sizing: border-box;
+}
+
+/* Ul */
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-image: url('icono.png');
+  background-size: cover;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="icono.ico">
+    <meta charset="UTF-8">
+    <title>Surviving the Fire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="overflow: visible;">
+    <div class="video-container">
+        <img src="fondo_final.jpg" class="background-image">
+    </div>
+    <div class="container">
+        <h1>FINAL RESULT</h1>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="bahia-negra.mp4" type="video/mp4">
+                Your browser does not support this video format.
+            </video>
+        </div>
+    </div>
+    <section id="preguntasFinales">
+        <div id="contenedorTabla"></div>
+        <div id="contenedorUsuario"></div>
+        <div class="opciones"><button onclick="location.href='final.html'">Back</button></div>
+    </section>
+    <script src="script.js" onload="mostrarResultados()"></script>
+</body>
+</html>
